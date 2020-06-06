@@ -88,10 +88,6 @@ h1 {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
-  border-style: none;
-}
-
 /* Forms
    ========================================================================== */
 
@@ -305,7 +301,7 @@ html {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e2e8f0; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 /*
@@ -321,10 +317,6 @@ html {
  *
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
-
-img {
-  border-style: solid;
-}
 
 
 [role="button"] {
@@ -364,12 +356,6 @@ h1 {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-}
-
 /**
  * Constrain images and videos to the parent width and preserve
  * their instrinsic aspect ratio.
@@ -377,60 +363,84 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.cursor-pointer {
-  cursor: pointer;
+.bg-rc-blue-dark {
+  background-color: #052533;
 }
 
 .flex {
   display: flex;
 }
 
-.flex-col {
-  flex-direction: column;
+.flex-row {
+  flex-direction: row;
 }
 
 .items-center {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-Righteous {
+  font-family: Righteous;
 }
 
-.h-48 {
-  height: 12rem;
+.h-header {
+  height: 11.25rem;
 }
 
-.h-screen {
-  height: 100vh;
+.text-sm {
+  font-size: .875rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
+.text-5xl {
+  font-size: 3rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.absolute {
+  position: absolute;
 }
 
-.text-orange-600 {
-  color: #dd6b20;
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.hover\:text-orange-500:hover {
-  color: #ed8936;
+.shadow-bottom {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.w-48 {
-  width: 12rem;
+.text-rc-orange {
+  color: #ED8E21;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+
+  .md\:h-2header {
+    height: 22.50rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .md\:text-10xl {
+    font-size: 8rem;
+  }
 }
