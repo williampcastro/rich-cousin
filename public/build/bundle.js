@@ -406,23 +406,18 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let div;
-    	let h1;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			h1 = element("h1");
-    			h1.textContent = "Images Box";
-    			add_location(h1, file$1, 1, 4, 29);
-    			attr_dev(div, "class", "container");
-    			add_location(div, file$1, 0, 0, 0);
+    			attr_dev(div, "class", " svelte-tcum3");
+    			add_location(div, file$1, 15, 0, 318);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
-    			append_dev(div, h1);
     		},
     		p: noop,
     		i: noop,

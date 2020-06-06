@@ -1,3 +1,18 @@
-<div class="container">
-    <h1>Images Box</h1>
+<style>
+    div {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        position: absolute;
+        width: 130px;
+        height: 182px;
+        left: 32px;
+        top: 210px;
+        background: #2491BF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+</style>
+
+<div class="">
+
 </div>

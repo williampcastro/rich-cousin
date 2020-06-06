@@ -33,11 +33,6 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -243,11 +238,6 @@ h1 {
  * Removes the default spacing and border for appropriate elements.
  */
 
-
-h1 {
-  margin: 0;
-}
-
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
@@ -321,11 +311,6 @@ html {
 
 [role="button"] {
   cursor: pointer;
-}
-
-h1 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 /**
