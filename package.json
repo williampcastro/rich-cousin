@@ -8,7 +8,7 @@
   "scripts": {
     "watch:tailwind": "postcss public/css/tailwind.css -o public/css/index.css -w",
     "build:tailwind": "postcss public/css/tailwind.css -o public/css/index.css",
-    "dev": "run-p start:dev autobuild watch:tailwind",
+    "dev": "run-p start:dev autobuild build:tailwind",
     "build": "npm run build:tailwind && rollup -c",
     "autobuild": "rollup -c -w",
     "start": "sirv public",
