@@ -105,7 +105,7 @@ module.exports = {
             '2header': '22.50rem',
         },
         fontFamily: {
-            "Righteous": ['Righteous'],
+            "Righteous": [ 'Righteous' ],
         },
         extend: {},
     },
@@ -124,9 +124,10 @@ module.exports = {
         zIndex: [ 'responsive', 'hover', 'focus', 'focus-within' ],
         boxShadow: [ 'responsive', 'hover', 'focus', 'active', 'group-hover' ],
         textColor: [ 'responsive', 'hover', 'focus', 'active', 'group-hover' ],
-        inset: ['responsive', 'hover', 'focus'],
-        fontFamily: ['responsive', 'hover', 'focus'],
-        boxShadow: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+        inset: [ 'responsive', 'hover', 'focus' ],
+        fontFamily: [ 'responsive', 'hover', 'focus' ],
+        margin: [ 'responsive', 'hover', 'focus' ],
+        padding: ['responsive', 'hover', 'focus'],
     },
     plugins: []
 }

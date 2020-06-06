@@ -363,6 +363,34 @@ h1 {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 .bg-rc-blue-dark {
   background-color: #052533;
 }
@@ -407,11 +435,17 @@ h1 {
   position: absolute;
 }
 
-.inset-0 {
-  top: 0;
+.inset-x-0 {
   right: 0;
-  bottom: 0;
   left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .shadow-bottom {
