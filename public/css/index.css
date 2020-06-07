@@ -33,11 +33,6 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -57,6 +52,10 @@ h1 {
 /**
  * Remove the gray background on active links in IE 10.
  */
+
+a {
+  background-color: transparent;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -87,10 +86,6 @@ h1 {
 /**
  * Remove the border on images inside links in IE 10.
  */
-
-img {
-  border-style: none;
-}
 
 /* Forms
    ========================================================================== */
@@ -247,11 +242,6 @@ img {
  * Removes the default spacing and border for appropriate elements.
  */
 
-
-h1 {
-  margin: 0;
-}
-
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
@@ -305,7 +295,7 @@ html {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e2e8f0; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 /*
@@ -322,24 +312,20 @@ html {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
-img {
-  border-style: solid;
-}
-
 
 [role="button"] {
   cursor: pointer;
-}
-
-h1 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 /**
  * Reset links to optimize for opt-in styling instead of
  * opt-out.
  */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 /**
  * Reset form element properties that are easy to forget to
@@ -364,12 +350,6 @@ h1 {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-}
-
 /**
  * Constrain images and videos to the parent width and preserve
  * their instrinsic aspect ratio.
@@ -377,60 +357,118 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.cursor-pointer {
-  cursor: pointer;
+.bg-rc-v2-blue-dark {
+  background-color: #012438;
 }
 
 .flex {
   display: flex;
 }
 
-.flex-col {
-  flex-direction: column;
+.grid {
+  display: grid;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .items-center {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-Righteous {
+  font-family: Righteous;
 }
 
-.h-48 {
+.h-012 {
   height: 12rem;
 }
 
-.h-screen {
-  height: 100vh;
+.h-header {
+  height: 11.25rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
+.text-sm {
+  font-size: .875rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.text-5xl {
+  font-size: 3rem;
 }
 
-.text-orange-600 {
-  color: #dd6b20;
+.max-w-screen-md {
+  max-width: 768px;
 }
 
-.hover\:text-orange-500:hover {
-  color: #ed8936;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
-.w-48 {
-  width: 12rem;
+.inset-x-0 {
+  right: 0;
+  left: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.shadow-bottom {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-rc-v2-orange {
+  color: #E83A0E;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.w-08 {
+  width: 8rem;
+}
+
+.contents {
+  display: contents;
+}
+
+@media (min-width: 768px) {
+
+  .md\:h-031 {
+    height: 31rem;
+  }
+
+  .md\:h-2header {
+    height: 22.50rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .md\:text-10xl {
+    font-size: 8rem;
+  }
+
+  .md\:max-w-screen-lg {
+    max-width: 1024px;
+  }
+
+  .md\:w-021 {
+    width: 21.5rem;
+  }
 }
