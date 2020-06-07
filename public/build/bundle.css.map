@@ -1,12 +1,8 @@
 {
   "version": 3,
   "file": "bundle.css",
-  "sources": [
-    "..\\..\\ImageBox.svelte"
-  ],
-  "sourcesContent": [
-    "<style>\r\n    div {\r\n        display: flex;\r\n        flex-direction: row;\r\n        padding: 2px;\r\n        position: absolute;\r\n        width: 130px;\r\n        height: 182px;\r\n        left: 32px;\r\n        top: 210px;\r\n        background: #2491BF;\r\n        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n    }\r\n</style>\r\n\r\n<div class=\"\">\r\n\r\n</div>\r\n"
-  ],
+  "sources": [],
+  "sourcesContent": [],
   "names": [],
-  "mappings": "AACI,GAAG,aAAC,CAAC,AACD,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,GAAG,CACnB,OAAO,CAAE,GAAG,CACZ,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,IAAI,CAAE,IAAI,CACV,GAAG,CAAE,KAAK,CACV,UAAU,CAAE,OAAO,CACnB,UAAU,CAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,AAC/C,CAAC"
+  "mappings": ""
 }

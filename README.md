@@ -24,4 +24,6 @@ he provides the images of mental map live. In this project you can see all the i
 ---
 
 ##Color References
-You can see the color pallet here: [Adobe Colors]("https://color.adobe.com/pt/Rich-Cousin-color-theme-15143264")
+The actual color pallet version is __Rich Cousin Color Theme v2__. You can see the color pallet on Adobe Colors: 
+* [Rich Cousin Color Theme]("https://color.adobe.com/pt/Rich-Cousin-color-theme-15143264")
+* [Rich Cousin Color Theme v2]("https://color.adobe.com/pt/Rich-Cousin-v2-color-theme-15146536")

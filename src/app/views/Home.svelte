@@ -5,5 +5,7 @@
 </script>
 
 <Header/>
-<ImageBox/>
+<div class="md:max-w-screen-lg max-w-screen-md contents">
+    <ImageBox/>
+</div>
 <Footer/>

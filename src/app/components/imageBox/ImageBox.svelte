@@ -1,18 +1,12 @@
-<style>
-    div {
-        display: flex;
-        flex-direction: row;
-        padding: 2px;
-        position: absolute;
-        width: 130px;
-        height: 182px;
-        left: 32px;
-        top: 210px;
-        background: #2491BF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-</style>
-
-<div class="">
-
+<script>
+    let basePath = './images/images_challenge_1/';
+    let typeImage = '.jpg';
+    let imageNames = [ ...Array (21).keys () ];
+</script>
+<div class="grid grid-cols-2 md:grid-cols-3 p-8">
+    {#each imageNames as imageName}
+        <div class="m-4 shadow-bottom h-012 w-08 md:h-031 md:w-021">
+            <div class="hover:shadow-2xl h-full" style="background-image:url({basePath}{imageName}{typeImage}); background-size: cover;"></div>
+        </div>
+    {/each}
 </div>

@@ -1,9 +1,26 @@
+const displayUtility  = ({ addUtilities }) => {
+    const display = {
+        '.contents': {
+            display: 'contents',
+        },
+    }
+    addUtilities(display, ['responsive', 'hover', 'focus'])
+}
+
 const COLORS = {
     ORANGE: '#ED8E21',
     ORANGE_DARK: '#B57122',
     BLUE_SOFT: '#2491BF',
     BLUE: '#57CDFF',
     BLUE_DARK: '#052533',
+}
+
+const COLORSv2 = {
+    ORANGE: '#E83A0E',
+    ORANGE_DARK: '#4F1405',
+    BLUE_SOFT: '#02507D',
+    BLUE: '#022F7D',
+    BLUE_DARK: '#012438',
 }
 
 module.exports = {
@@ -14,6 +31,11 @@ module.exports = {
             'rc-blue-soft': COLORS.BLUE_SOFT,
             'rc-blue': COLORS.BLUE,
             'rc-blue-dark': COLORS.BLUE_DARK,
+            'rc-v2-orange': COLORSv2.ORANGE,
+            'rc-v2-orange-dark': COLORSv2.ORANGE_DARK,
+            'rc-v2-blue-soft': COLORSv2.BLUE_SOFT,
+            'rc-v2-blue': COLORSv2.BLUE,
+            'rc-v2-blue-dark': COLORSv2.BLUE_DARK,
         },
         backgroundColor: {
             'rc-orange': COLORS.ORANGE,
@@ -21,6 +43,11 @@ module.exports = {
             'rc-blue-soft': COLORS.BLUE_SOFT,
             'rc-blue': COLORS.BLUE,
             'rc-blue-dark': COLORS.BLUE_DARK,
+            'rc-v2-orange': COLORSv2.ORANGE,
+            'rc-v2-orange-dark': COLORSv2.ORANGE_DARK,
+            'rc-v2-blue-soft': COLORSv2.BLUE_SOFT,
+            'rc-v2-blue': COLORSv2.BLUE,
+            'rc-v2-blue-dark': COLORSv2.BLUE_DARK,
         },
         borderColor: {
             'rc-orange': COLORS.ORANGE,
@@ -28,12 +55,17 @@ module.exports = {
             'rc-blue-soft': COLORS.BLUE_SOFT,
             'rc-blue': COLORS.BLUE,
             'rc-blue-dark': COLORS.BLUE_DARK,
+            'rc-v2-orange': COLORSv2.ORANGE,
+            'rc-v2-orange-dark': COLORSv2.ORANGE_DARK,
+            'rc-v2-blue-soft': COLORSv2.BLUE_SOFT,
+            'rc-v2-blue': COLORSv2.BLUE,
+            'rc-v2-blue-dark': COLORSv2.BLUE_DARK,
         },
         boxShadow: {
             'left': '-4px 0 4px -4px rgba(0, 0, 0, .25)',
             'top': '0 -4px 4px -4px rgba(0, 0, 0, .25)',
             'right': '4px 0 4px -4px rgba(0, 0, 0, .25)',
-            'bottom': '0px 4px 4px rgba(0, 0, 0, 0.25)'
+            'bottom': '0px 4px 4px rgba(0, 0, 0, 0.25)',
         },
         zIndex: {
             'inf': '2147483647',
@@ -70,6 +102,7 @@ module.exports = {
             '11/12': '91.666667%',
             '7/25': '28%',
             '48/50': '96%',
+            '9/10': '90%',
         },
         fontSize: {
             'xs': '.75rem',
@@ -90,22 +123,45 @@ module.exports = {
             '11xl': '9rem',
         },
         width: {
-            '28': '7rem',
-            '36': '9rem',
-            '80': '20rem',
-            '96': '24rem',
-            '020': '20%',
-            '030': '30%'
+            '045': '45rem',
+            '026': '26rem',
+            '031': '31rem',
+            '022': '22rem',
+            '021': '21.5rem',
+            '012': '12rem',
+            '08': '8rem',
+            'header': '11.25rem',
+            '2header': '22.50rem',
         },
         height: {
-            '020': '20%',
-            '030': '30%',
-            '050': '50%',
+            '045': '45rem',
+            '031': '31rem',
+            '022': '22rem',
+            '021': '21.5rem',
+            '012': '12rem',
+            '08': '8rem',
             'header': '11.25rem',
             '2header': '22.50rem',
         },
         fontFamily: {
             "Righteous": [ 'Righteous' ],
+        },
+        gridTemplateColumns: {
+            '13': 'repeat(13, minmax(0, 1fr))',
+            '14': 'repeat(14, minmax(0, 1fr))',
+            '15': 'repeat(15, minmax(0, 1fr))',
+            '16': 'repeat(16, minmax(0, 1fr))',
+            '17': 'repeat(17, minmax(0, 1fr))',
+            '18': 'repeat(18, minmax(0, 1fr))',
+            '19': 'repeat(19, minmax(0, 1fr))',
+            '20': 'repeat(20, minmax(0, 1fr))',
+            '21': 'repeat(21, minmax(0, 1fr))',
+            '22': 'repeat(22, minmax(0, 1fr))',
+            '23': 'repeat(23, minmax(0, 1fr))',
+            '24': 'repeat(24, minmax(0, 1fr))',
+        },
+        display:{
+            'contents': 'contents'
         },
         extend: {},
     },
@@ -127,7 +183,9 @@ module.exports = {
         inset: [ 'responsive', 'hover', 'focus' ],
         fontFamily: [ 'responsive', 'hover', 'focus' ],
         margin: [ 'responsive', 'hover', 'focus' ],
-        padding: ['responsive', 'hover', 'focus'],
+        padding: [ 'responsive', 'hover', 'focus' ],
     },
-    plugins: []
+    plugins: [
+        displayUtility
+    ]
 }

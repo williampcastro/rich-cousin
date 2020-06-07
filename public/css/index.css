@@ -53,6 +53,10 @@ body {
  * Remove the gray background on active links in IE 10.
  */
 
+a {
+  background-color: transparent;
+}
+
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -318,6 +322,11 @@ html {
  * opt-out.
  */
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /**
  * Reset form element properties that are easy to forget to
  * style explicitly so you don't inadvertently introduce
@@ -348,40 +357,16 @@ html {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-.bg-rc-blue-dark {
-  background-color: #052533;
+.bg-rc-v2-blue-dark {
+  background-color: #012438;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .flex-row {
@@ -404,6 +389,10 @@ html {
   font-family: Righteous;
 }
 
+.h-012 {
+  height: 12rem;
+}
+
 .h-header {
   height: 11.25rem;
 }
@@ -416,17 +405,17 @@ html {
   font-size: 3rem;
 }
 
-.absolute {
-  position: absolute;
+.max-w-screen-md {
+  max-width: 768px;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .inset-x-0 {
   right: 0;
   left: 0;
-}
-
-.top-0 {
-  top: 0;
 }
 
 .bottom-0 {
@@ -437,8 +426,8 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.text-rc-orange {
-  color: #ED8E21;
+.text-rc-v2-orange {
+  color: #E83A0E;
 }
 
 .uppercase {
@@ -449,7 +438,19 @@ html {
   text-transform: lowercase;
 }
 
+.w-08 {
+  width: 8rem;
+}
+
+.contents {
+  display: contents;
+}
+
 @media (min-width: 768px) {
+
+  .md\:h-031 {
+    height: 31rem;
+  }
 
   .md\:h-2header {
     height: 22.50rem;
@@ -461,5 +462,13 @@ html {
 
   .md\:text-10xl {
     font-size: 8rem;
+  }
+
+  .md\:max-w-screen-lg {
+    max-width: 1024px;
+  }
+
+  .md\:w-021 {
+    width: 21.5rem;
   }
 }
