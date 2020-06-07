@@ -3,7 +3,7 @@
     let typeImage = '.jpg';
     let imageNames = [ ...Array (21).keys () ];
 </script>
-<div class="grid grid-cols-1 md:grid-cols-3 p-8">
+<div class="grid grid-cols-1 md:grid-cols-3 p-4 md:p-8">
     {#each imageNames as imageName}
         <div class="m-4 shadow-bottom h-027 w-019 md:h-031 md:w-021">
             <div class="hover:shadow-2xl h-full" style="background-image:url({basePath}{imageName}{typeImage}); background-size: cover;"></div>
