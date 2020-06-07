@@ -7,6 +7,12 @@ he provides the images of mental map live. In this project you can see all the i
 
 ---
 
+#Design Interface
+
+* [Model on Figma]("https://www.figma.com/file/ElFDAX1lZJKBocFCe5cbvO/Rich-Cousin?node-id=0%3A1")
+
+---
+
 ##Technologies
 
 ### WEB Framework
