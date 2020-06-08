@@ -580,7 +580,7 @@ var app = (function () {
     	}
     }
 
-    var version="1.0.2";
+    var version="1.0.3";
 
     const developers = [
         {
