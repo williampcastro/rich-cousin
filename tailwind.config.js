@@ -1,11 +1,42 @@
-const displayUtility  = ({ addUtilities }) => {
+const displayUtility = ({ addUtilities }) => {
     const display = {
         '.contents': {
-            display: 'contents',
+            'display': 'contents',
         },
     }
-    addUtilities(display, ['responsive', 'hover', 'focus'])
+    addUtilities (display, [ 'responsive', 'hover', 'focus' ])
 }
+
+const justifySelfUtility = ({ addUtilities }) => {
+    const justifySelf = {
+        '.justify-self-auto': {
+            'justify-self': 'auto',
+        },
+        '.justify-self-normal': {
+            'justify-self': 'normal',
+        },
+        '.justify-self-stretch': {
+            'justify-self': 'stretch',
+        },
+        '.justify-self-center': {
+            'justify-self': 'center',
+        },
+        '.justify-self-start': {
+            'justify-self': 'start',
+        },
+        '.justify-self-end': {
+            'justify-self': 'end',
+        },
+        '.justify-self-left': {
+            'justify-self': 'left',
+        },
+        '.justify-self-right': {
+            'justify-self': 'right',
+        },
+    }
+    addUtilities (justifySelf, [ 'responsive', 'hover', 'focus' ])
+}
+
 
 const COLORS = {
     ORANGE: '#ED8E21',
@@ -164,7 +195,7 @@ module.exports = {
             '23': 'repeat(23, minmax(0, 1fr))',
             '24': 'repeat(24, minmax(0, 1fr))',
         },
-        display:{
+        display: {
             'contents': 'contents'
         },
         extend: {},
@@ -190,6 +221,7 @@ module.exports = {
         padding: [ 'responsive', 'hover', 'focus' ],
     },
     plugins: [
-        displayUtility
+        displayUtility,
+        justifySelfUtility,
     ]
 }

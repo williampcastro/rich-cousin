@@ -446,6 +446,10 @@ a {
   display: contents;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 @media (min-width: 768px) {
 
   .md\:h-031 {
