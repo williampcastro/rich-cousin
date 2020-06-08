@@ -600,42 +600,63 @@ var app = (function () {
 
     function create_fragment$2(ctx) {
     	let footer;
+    	let div2;
+    	let div0;
     	let t0;
     	let a0;
-    	let t1;
-    	let t2_value = developers[0].name + "";
     	let t2;
-    	let a0_href_value;
+    	let div1;
     	let t3;
     	let a1;
     	let t4;
-    	let t5_value = developers[1].name + "";
+    	let t5_value = developers[0].name + "";
     	let t5;
     	let a1_href_value;
     	let t6;
+    	let a2;
     	let t7;
+    	let t8_value = developers[1].name + "";
+    	let t8;
+    	let a2_href_value;
+    	let t9;
+    	let t10;
 
     	const block = {
     		c: function create() {
     			footer = element("footer");
+    			div2 = element("div");
+    			div0 = element("div");
     			t0 = text("Powered By ");
     			a0 = element("a");
-    			t1 = text("@");
-    			t2 = text(t2_value);
-    			t3 = text(" And ");
+    			a0.textContent = "@Primo Rico";
+    			t2 = space();
+    			div1 = element("div");
+    			t3 = text("Developed By\r\n            ");
     			a1 = element("a");
     			t4 = text("@");
     			t5 = text(t5_value);
-    			t6 = text(" - v");
-    			t7 = text(/*versionApp*/ ctx[0]);
+    			t6 = text("\r\n            And\r\n            ");
+    			a2 = element("a");
+    			t7 = text("@");
+    			t8 = text(t8_value);
+    			t9 = text("\r\n            - v");
+    			t10 = text(/*versionApp*/ ctx[0]);
     			attr_dev(a0, "class", "px-2");
     			attr_dev(a0, "target", "_blank");
-    			attr_dev(a0, "href", a0_href_value = developers[0].github);
-    			add_location(a0, file$2, 7, 15, 316);
+    			attr_dev(a0, "href", "https://www.instagram.com/oprimo.rico/");
+    			add_location(a0, file$2, 8, 24, 386);
+    			add_location(div0, file$2, 8, 8, 370);
     			attr_dev(a1, "class", "px-2");
     			attr_dev(a1, "target", "_blank");
-    			attr_dev(a1, "href", a1_href_value = developers[1].github);
-    			add_location(a1, file$2, 7, 109, 410);
+    			attr_dev(a1, "href", a1_href_value = developers[0].github);
+    			add_location(a1, file$2, 11, 12, 542);
+    			attr_dev(a2, "class", "px-2");
+    			attr_dev(a2, "target", "_blank");
+    			attr_dev(a2, "href", a2_href_value = developers[1].github);
+    			add_location(a2, file$2, 13, 12, 662);
+    			add_location(div1, file$2, 9, 8, 497);
+    			attr_dev(div2, "class", "flex flex-col justify-center items-center");
+    			add_location(div2, file$2, 7, 4, 305);
     			attr_dev(footer, "class", "-m-2 inset-x-0 bottom-0 flex justify-center items-center h-12 bg-rc-v2-blue-dark font-Righteous  text-rc-v2-orange");
     			add_location(footer, file$2, 6, 0, 168);
     		},
@@ -644,16 +665,22 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, footer, anchor);
-    			append_dev(footer, t0);
-    			append_dev(footer, a0);
-    			append_dev(a0, t1);
-    			append_dev(a0, t2);
-    			append_dev(footer, t3);
-    			append_dev(footer, a1);
+    			append_dev(footer, div2);
+    			append_dev(div2, div0);
+    			append_dev(div0, t0);
+    			append_dev(div0, a0);
+    			append_dev(div2, t2);
+    			append_dev(div2, div1);
+    			append_dev(div1, t3);
+    			append_dev(div1, a1);
     			append_dev(a1, t4);
     			append_dev(a1, t5);
-    			append_dev(footer, t6);
-    			append_dev(footer, t7);
+    			append_dev(div1, t6);
+    			append_dev(div1, a2);
+    			append_dev(a2, t7);
+    			append_dev(a2, t8);
+    			append_dev(div1, t9);
+    			append_dev(div1, t10);
     		},
     		p: noop,
     		i: noop,
