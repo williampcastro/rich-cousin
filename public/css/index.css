@@ -393,8 +393,8 @@ a {
   font-family: Righteous;
 }
 
-.h-027 {
-  height: 27rem;
+.h-025 {
+  height: 25rem;
 }
 
 .h-header {
@@ -442,8 +442,8 @@ a {
   text-transform: lowercase;
 }
 
-.w-019 {
-  width: 19rem;
+.w-018 {
+  width: 18.5rem;
 }
 
 .contents {
@@ -455,10 +455,6 @@ a {
 }
 
 @media (min-width: 768px) {
-
-  .md\:h-031 {
-    height: 31rem;
-  }
 
   .md\:h-2header {
     height: 22.50rem;
@@ -474,9 +470,5 @@ a {
 
   .md\:max-w-screen-lg {
     max-width: 1024px;
-  }
-
-  .md\:w-021 {
-    width: 21.5rem;
   }
 }
