@@ -405,6 +405,10 @@ a {
   font-size: .875rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
 }
@@ -462,6 +466,10 @@ a {
 
   .md\:text-3xl {
     font-size: 1.875rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
   }
 
   .md\:text-10xl {

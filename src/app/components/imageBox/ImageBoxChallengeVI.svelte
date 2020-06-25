@@ -1,5 +1,5 @@
 <script>
-    let basePath = './images/images_challenge_1/';
+    let basePath = './images/images_challenge_VI/';
     let typeImage = '.jpg';
     let imageNames = [ ...Array (21).keys () ];
 </script>
