@@ -1,9 +1,8 @@
 # Rich Cousin
 
-The application to show all images of 21 days live challenge.
+The application to show all images of 21 days live challenge. 
 
-The Cousin (Thiago Nigro) likes to make some live challenges in live of instagram, and on it
-he provides the images of mental map live. In this project you can see all the images of 2 challenges.
+The Cousin (Thiago Nigro) likes to make some live challenges on Instagram live, and on it, he provides the images of a mental map live. In this project, you can see all the images of 2 challenges.
 
 [Rich Cousin Page](https://rich-cousin.netlify.app/)
 ---
