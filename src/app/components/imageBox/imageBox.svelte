@@ -1,7 +1,9 @@
 <script>
-    let basePath = './images/images_challenge_VI/';
-    let typeImage = '.jpg';
-    let imageNames = [ ...Array (21).keys () ];
+    export let path;
+    export let typeImage;
+    export let totalImages;
+    let basePath = './images/' + path + '/';
+    let imageNames = [ ...Array (totalImages).keys () ];
 </script>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 md:p-8">
     {#each imageNames as imageName}
