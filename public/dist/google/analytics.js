@@ -2,5 +2,5 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', 'G-721W3ZE15F', 'auto');
+ga('create', 'UA-172313680-1', 'auto');
 ga('send', 'pageview', location.pathname);
