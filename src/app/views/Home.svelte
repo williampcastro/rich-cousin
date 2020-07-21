@@ -11,7 +11,7 @@
     <TitleChallenge title={'Challenge - Rei Salomão'}/>
     <ImageBox path={'images_challenge_salomao'}
               typeImage={'.jpeg'}
-              totalImages={35}/>
+              totalImages={43}/>
 
     <TitleChallenge title={'Challenge - A Arca'}/>
     <ImageBox path={'images_challenge_arca'}
