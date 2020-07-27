@@ -8,6 +8,11 @@
 <Header/>
 <div class="md:max-w-screen-lg max-w-screen-md contents">
 
+    <TitleChallenge title={'Live - A ARCA'}/>
+    <ImageBox path={'images_live_arca'}
+              typeImage={'.jpeg'}
+              totalImages={3}/>
+
     <TitleChallenge title={'Challenge - Rei Salomão'}/>
     <ImageBox path={'images_challenge_salomao'}
               typeImage={'.jpeg'}
@@ -15,7 +20,7 @@
 
     <TitleChallenge title={'Challenge - A Arca'}/>
     <ImageBox path={'images_challenge_arca'}
-              typeImage={'.PNG'}
+              typeImage={'.jpeg'}
               totalImages={5}/>
 
     <TitleChallenge title={'Challenge - VII'}/>
