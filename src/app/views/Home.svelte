@@ -8,6 +8,12 @@
 <Header/>
 <div class="md:max-w-screen-lg max-w-screen-md contents">
 
+
+    <TitleChallenge title={'Challenge - O LEGADO'}/>
+    <ImageBox path={'images_challenge_o_legado'}
+              typeImage={'.png'}
+              totalImages={2}/>
+
     <TitleChallenge title={'Live - A ARCA'}/>
     <ImageBox path={'images_live_arca'}
               typeImage={'.jpeg'}
