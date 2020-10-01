@@ -12,7 +12,7 @@
     <TitleChallenge title={'Challenge - O LEGADO'}/>
     <ImageBox path={'images_challenge_o_legado'}
               typeImage={'.jpeg'}
-              totalImages={4}/>
+              totalImages={7}/>
 
     <TitleChallenge title={'Live - A ARCA'}/>
     <ImageBox path={'images_live_arca'}
