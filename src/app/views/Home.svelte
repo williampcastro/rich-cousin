@@ -1,43 +1,59 @@
 <script>
     import Header from '../components/header/Header.svelte';
-    import ImageBox from '../components/imageBox/ImageBox.svelte';
-    import TitleChallenge from '../components/titleChallange/titleChallenge.svelte';
     import Footer from "../components/footer/Footer.svelte";
+    import Challenge from "../components/challenge/Challenge.svelte";
+
+    const getDefaultObjectOfChallenge = () => {
+        return {
+            title: null,
+            image: {
+                path: null,
+                type: null,
+                total: null,
+            }
+        }
+    }
+
+    let challenges = [];
+
+    const challengeVI = getDefaultObjectOfChallenge();
+    challengeVI.title = 'Challenge - VI';
+    challengeVI.image.path = 'images_challenge_VI';
+    challengeVI.image.type = '.jpg';
+    challengeVI.image.total = 21;
+
+    const challengeVII = getDefaultObjectOfChallenge();
+    challengeVII.title = 'Challenge - VII';
+    challengeVII.image.path = 'images_challenge_VII';
+    challengeVII.image.type = '.jpeg';
+    challengeVII.image.total = 24;
+
+    const challengeArca = getDefaultObjectOfChallenge();
+    challengeArca.title = 'Live - A ARCA';
+    challengeArca.image.path = 'images_live_arca';
+    challengeArca.image.type = '.jpeg';
+    challengeArca.image.total = 3;
+
+    const challengeReiSalomao = getDefaultObjectOfChallenge();
+    challengeReiSalomao.title = 'Challenge - Rei Salomão';
+    challengeReiSalomao.image.path = 'images_challenge_salomao';
+    challengeReiSalomao.image.type = '.jpeg';
+    challengeReiSalomao.image.total = 64;
+
+    const challengeLegado = getDefaultObjectOfChallenge();
+    challengeLegado.title = 'Challenge - O LEGADO';
+    challengeLegado.image.path = 'images_challenge_o_legado';
+    challengeLegado.image.type = '.jpeg';
+    challengeLegado.image.total = 10;
+
+    challenges.push(challengeLegado);
+    challenges.push(challengeReiSalomao);
+    challenges.push(challengeArca);
+    challenges.push(challengeVII);
+    challenges.push(challengeVI);
+
 </script>
 
 <Header/>
-<div class="md:max-w-screen-lg max-w-screen-md contents">
-
-
-    <TitleChallenge title={'Challenge - O LEGADO'}/>
-    <ImageBox path={'images_challenge_o_legado'}
-              typeImage={'.jpeg'}
-              totalImages={10}/>
-
-    <TitleChallenge title={'Live - A ARCA'}/>
-    <ImageBox path={'images_live_arca'}
-              typeImage={'.jpeg'}
-              totalImages={3}/>
-
-    <TitleChallenge title={'Challenge - Rei Salomão'}/>
-    <ImageBox path={'images_challenge_salomao'}
-              typeImage={'.jpeg'}
-              totalImages={64}/>
-
-    <TitleChallenge title={'Challenge - A Arca'}/>
-    <ImageBox path={'images_challenge_arca'}
-              typeImage={'.jpeg'}
-              totalImages={5}/>
-
-    <TitleChallenge title={'Challenge - VII'}/>
-    <ImageBox path={'images_challenge_VII'}
-              typeImage={'.jpeg'}
-              totalImages={24}/>
-
-    <TitleChallenge title={'Challenge - VI'}/>
-    <ImageBox path={'images_challenge_VI'}
-              typeImage={'.jpg'}
-              totalImages={21}/>
-
-</div>
+<Challenge challenges={challenges} />
 <Footer/>
