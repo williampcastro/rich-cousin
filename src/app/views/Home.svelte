@@ -44,7 +44,7 @@
     challengeLegado.title = 'Challenge - O LEGADO';
     challengeLegado.image.path = 'images_challenge_o_legado';
     challengeLegado.image.type = '.jpeg';
-    challengeLegado.image.total = 10;
+    challengeLegado.image.total = 21;
 
     challenges.push(challengeLegado);
     challenges.push(challengeReiSalomao);
