@@ -52,6 +52,13 @@
     challengeArca.image.type = '.jpeg';
     challengeArca.image.total = 5;
 
+    const challengeMarketingDigital = getDefaultObjectOfChallenge();
+    challengeMarketingDigital.title = 'Challenge - Marketing Digital';
+    challengeMarketingDigital.image.path = 'images_challenge_marketing_digital';
+    challengeMarketingDigital.image.type = '.PNG';
+    challengeMarketingDigital.image.total = 5;
+
+    challenges.push(challengeMarketingDigital);
     challenges.push(challengeArca);
     challenges.push(challengeLegado);
     challenges.push(challengeReiSalomao);
