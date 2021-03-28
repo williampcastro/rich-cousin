@@ -28,11 +28,11 @@
     challengeVII.image.type = '.jpeg';
     challengeVII.image.total = 24;
 
-    const challengeArca = getDefaultObjectOfChallenge();
-    challengeArca.title = 'Live - A ARCA';
-    challengeArca.image.path = 'images_live_arca';
-    challengeArca.image.type = '.jpeg';
-    challengeArca.image.total = 3;
+    const challengeLiveArca = getDefaultObjectOfChallenge();
+    challengeLiveArca.title = 'Live - A ARCA';
+    challengeLiveArca.image.path = 'images_live_arca';
+    challengeLiveArca.image.type = '.jpeg';
+    challengeLiveArca.image.total = 3;
 
     const challengeReiSalomao = getDefaultObjectOfChallenge();
     challengeReiSalomao.title = 'Challenge - Rei Salomão';
@@ -46,9 +46,16 @@
     challengeLegado.image.type = '.jpeg';
     challengeLegado.image.total = 21;
 
+    const challengeArca = getDefaultObjectOfChallenge();
+    challengeArca.title = 'Challenge - A Arca';
+    challengeArca.image.path = 'images_challenge_arca';
+    challengeArca.image.type = '.jpeg';
+    challengeArca.image.total = 5;
+
+    challenges.push(challengeArca);
     challenges.push(challengeLegado);
     challenges.push(challengeReiSalomao);
-    challenges.push(challengeArca);
+    challenges.push(challengeLiveArca);
     challenges.push(challengeVII);
     challenges.push(challengeVI);
 
